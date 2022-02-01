@@ -1,0 +1,2050 @@
+<!-- 
+	Hello to anyone looking at my code! 
+	To give credit where credit's due, most of the javascript is taken 
+	from the tutorials on w3schools.com. Just to let you know.
+-->
+
+<html>
+<head>
+	<style>
+		.content {
+			display: none;
+		}
+		button {
+			width: 100px;	
+		}
+		.sort-button {
+			width:auto;
+			background-color:grey;
+			border:none;
+		}
+	</style>
+
+
+</head>
+<body>
+
+  <p>Concepts from courses in part II physics. My feeling is that if you know
+  all of these comfortably, you'll do fine in exams. </p>
+
+  <p>(beta)
+  Press the sort button to sort the list in each course alphabetically
+  (and refresh the page to get back to the lovely order I typed it in)</p>
+
+
+  <p>The first section of each course
+  is what I noted down during lectures as "being named after" someone; 
+  then there is a section on "Other important things" for completeness and 
+  revision purposes.
+  
+  <p>Those marked with a (+) were not mentioned in lectures, 
+  but in other discussions like supervisions. 
+  Those with a (*) were less important, 
+  non-examinable or very briefly mentioned in lectures (although I only really
+  stuck to this notation in the first course I typed up, AQP).</p>
+  
+  <p>Would an upload/suggestion feature be useful here?</p>
+  
+  <h2>Part II</h2>
+  
+  <button type="button" class="collapsible">AQP</button>
+  <div class="content">
+  <ul id="id01">
+  <button class="sort-button" onclick="sortList()">Sort</button>
+    <li>Clebsch-Gordon coefficients</li>
+    <li>Schr&oumldinger equation</li>
+    <li>Schr&oumldinger picture</li>
+    <li>Heisenberg picture</li>
+    <li>Heisenberg equation</li>
+    <li>Planck black-body formula</li>
+    <li>Bohr model</li>
+    <li>Fermions</li>
+    <li>Bosons</li>
+    <li>von Neumann measurements</li>
+    <li>Copenhagen interpretation</li>
+    <li>Poisson bracket</li>
+    <li>Quantum Green's functions</li>
+    <li>Qunatum Zeeno effect</li>
+    <li>Zeeman effect</li>
+    <li>Quantum Hall effect</li>
+    <li>Hilbert space</li>
+    <li>Baker-Haussdorf(-Campbell) equality</li>
+    <li>Hermitian operator</li>
+    <li>Hamiltonian</li>
+    <li>Pauli exclusion principle</li>
+    <li>Aharonov-Bohm effect</li>
+    <li>Bohr radius</li>
+    <li>de Broglie wavelength</li>
+    <li>Hund's rules (*)</li>
+    <li>Land&eacute projection formula</li>
+    <li>Landau levels (*)</li>
+    <li>Feynman diagrams (*)</li>
+    <li>von Neumann equation (cf classical Liouville eqn)</li>
+    <li>Dyson series</li>
+    <li>Fock space</li>
+    <li>(linear) Stark effect</li>
+    <li>Rabi frequency</li>
+    <li>Larmor precession</li>
+    <li>Fermi's golden rule</li>
+    <li>Purcell effect</li>
+    <li>Einstein rate equations (*)</li>
+    <li>Coulomb gauge</li>
+    <li>Fock state</li>
+    <li>Casimir effect</li>
+    <li>Poisson distribution (noise)</li>
+    <li>Glauber states</li>
+    <li>Fourier expansion</li>
+    <li>Stern-Gerlach experiment</li>
+    <li>Pauli matrices</li>
+    <li>Wilson/Bethe renormalisation group (+)</li>
+    <li>Don Idler (+)</li>
+    <li>Einstein relations (+)</li>
+    <li>Grotrian diagrams (*)</li> 
+    <li>Wigner-Eckhart theorem</li>
+    <li>Kubo's formula (*)</li>
+    <li>Young's slits</li> 
+    <li>Heisenberg uncertainty principle</li> 
+  </ul>
+  Other important things: <button class="sort-button" onclick="sortList1()">Sort</button>
+  <ul id="id01other">
+    <li>Interaction picture</li>  
+    <li>Wavefunction</li>
+    <li>Tensor product</li>
+    <li>Entanglement</li>
+    <li>Indistinguishability</li>
+    <li>Minimum uncertainty state</li>
+    <li>Anti/symmetrisation</li>
+    <li>Exchange interactions</li>
+    <li>Perturbation theory</li>
+    <li>Ordering operators</li>
+    <li>Creation and Annihilation operators</li>
+    <li>Degeneracy</li>
+    <li>Modes vs basis functions</li>
+    <li>Field operators</li>
+    <li>Parameters vs dynamical variables</li>
+    <li>Normalisation</li>
+    <li>Spin angular momentum - hyper/fine structures</li>  
+    <li>Coherence</li> 
+    <li>Squeezing</li>
+    <li>Transition dipole moment</li>
+    <li>Stimulated/spontaneous emission</li> 
+    <li>Parity</li>
+    <li>Variational methods</li>
+    <li>Polarisation</li>
+    <li>Spherical harmonics</li>
+    <li>Response function/generalised susceptibility</li> 
+    <li>Flux quantum</li> 
+    <li></li> 
+  </ul>
+  </div>
+  
+  <br>
+  <button type="button" class="collapsible">TP1 (incomplete)</button>
+  <div class="content">
+  <ul id="id02">
+  <button class="sort-button" onclick="sortList2()">Sort</button>
+  	<li>Kramers-Kr&oumlnig relations</li>
+    <li>Dirac equation</li>
+    <li>Klein-Gordon equation</li>
+    <li>Poisson bracket</li>
+    <li>Hamiltonian mechanics</li>
+    <li>Lagrangian density</li>
+    <li>Nambu-Goto action</li>
+    <li>Euler-Lagrange equation</li>
+    <li></li> 
+  </ul>
+  Other important things: <button class="sort-button" onclick="sortList2o()">Sort</button>
+  <ul id="id02other">
+    <li></li>
+  </ul>
+  </div>
+  
+  <br>
+  <button type="button" class="collapsible">Relativity</button>
+  <div class="content">
+  <ul id="id03">
+  <button class="sort-button" onclick="sortList3()">Sort</button>
+  	<li>Einstein's field equations</li>
+    <li>Lorentz transformation</li>
+    <li>Lorentz invariance</li>
+    <li>Minkowski spacetime</li>
+    <li>Schwarzschild solution</li>
+    <li>Galilean spacetime</li>
+    <li>Einstein-de Sitter model</li>
+    <li>de Sitter universe</li>
+    <li>Kruskal extension</li>
+    <li>Friedmann constraint equations</li>
+    <li>Hubble parameter</li>
+    <li>Eddington-Finkelstein coordinates</li>
+    <li>Riemannian manifold</li>
+    <li>Riemann curvature tensor</li>
+    <li>Ricci tensor</li>
+    <li>Ricci scalar</li>
+    <li>Robertson-Walker metric</li>
+    <li>Bianchi identity</li>
+    <li>Euclidean space</li>
+    <li>Cartesian coordinates</li>
+    <li>Newtonian limit</li>
+    <li>Lorentz boost</li>
+    <li>Kruskal-Szekeres coordinates</li>
+    <li>Jacobian</li>
+    <li>Einstein summation convention</li>
+    <li>Lorentz invariant</li>
+    <li>Lorenz gauge</li>
+    <li>Kronecker delta</li>
+    <li>Levi-Cevita tensor</li>
+    <li>Christoffel symbols</li>
+    <li>"Lagrangian" approach</li>
+    <li>Poincar&eacute transformation</li>
+    <li>Compton scattering</li>
+    <li>Doppler effect</li>
+    <li>Fermi-Walker transport</li>
+    <li>Coriolis acceleration</li>
+    <li>Maxwell field strength tensor</li>
+    <li>Laplacian vs d'Alembertian operators</li>
+    <li>Fermi normal coordinates</li>
+    <li>Einstein tensor</li>
+    <li>Maxwell stress</li>
+    <li>Poisson equation</li>
+    <li>Lovelock's theorem</li>
+    <li>Planck scale</li>
+    <li>Coulomb field</li>
+    <li>Birkhoff's theorem</li>
+    <li>Einstein ring</li>
+    <li>Eddington 1919 eclipse measurements</li>
+    <li>Kretschmann scalar</li>
+    <li>Schwarzschild radius</li>
+    <li>Chandrasekhar limit</li>
+    <li>Euler-Lagrange equation</li>
+    <li></li> 
+  </ul>
+  Other important things: <button class="sort-button" onclick="sortList3o()">Sort</button>
+  <ul id="id03other">
+    <li>Quotient theorem</li>
+    <li>Tidal effects</li>
+    <li>Event horizon</li>
+    <li>Line element/metric</li>
+    <li>(affinely-parameterised) Geodesics</li>
+    <li>Energy-momentum tensor</li>
+    <li>Dust</li>
+    <li>Local intertial coordinates</li>
+    <li>Instantaneous rest frame</li>
+    <li>Free fall</li>
+    <li>Distant, stationary observer</li>
+    <li>Cosmological constant</li>
+    <li>Innermost Stable Circular Orbit</li>
+    <li>Gravitational redshift</li>
+    <li>Maximally-symmetric space</li>
+    <li>Critical density</li>
+    <li>Curvature</li>
+  </ul>
+  </div>
+  
+  <br>
+  <button type="button" class="collapsible">EO</button>
+  <div class="content">
+  <ul id="id04">
+  <button class="sort-button" onclick="sortList4()">Sort</button>
+    <li>Wiener-Khinchin theorem</li>
+    <li>van Cittert-Zernicke theorem</li>
+    <li>Maxwell field strength tensor</li>
+    <li>Fermat's principle</li>
+    <li>Rayleigh scattering</li>
+    <li>Aharonov-Bohm effect</li>
+    <li>Coulomb gauge</li>
+    <li>Lorentz force</li>
+    <li>Lorenz gauge</li>
+    <li>Stokes shift</li>
+    <li>Michelson interferometer</li>
+    <li>Michelson-Morley experiment</li>
+    <li>Thomson scattering</li>
+    <li>Raman scattering</li>
+    <li>Maxwell's equations</li>
+    <li>Faraday medium</li>
+    <li>Faraday effect</li>
+    <li>Larmor forumula</li>
+    <li>Li&eacutenard formula</li> 
+    <li>Jones algebra</li>
+    <li>Hertzian dipole</li>
+    <li>Cherenkov radiation</li>
+    <li>Amp&egravere's law</li>
+    <li>Gauss' law</li>
+    <li>Malus' Law</li>
+    <li>Drude model</li>
+    <li>Bessel functions</li>
+    <li>Kerr effect (constant, cell)</li>
+    <li>Pockels effect</li>
+    <li>Verdet coefficient</li>
+    <li>Fresnel-Arago laws</li>
+    <li>Bloch's theorem</li>
+    <li>Parseval's theorem (*)</li>
+    <li>Brillouin zone</li>
+    <li>Bragg reflector</li>
+    <li>Fabry-Perot etalon (*)</li>
+    <li>Fourier theory</li> 
+    <li>Doppler (thermal) broadening</li>
+    <li>Lorentzian peak</li>
+    <li>Gaussian peak</li>
+    <li>Fourier transform spectroscopy</li>
+    <li>Jacquinot advantage (*)</li>
+    <li>Fellgett advantage (*)</li>
+    <li>Young's slits</li> 
+    <li>Poisson equation</li>
+    <li>Tonomura's ring (*)</li>
+    <li>London equation</li>
+    <li>Meissner effect</li>
+    <li>Cooper pairs</li> 
+    <li>Dirac quantisation condition</li> 
+    <li>Josephson junction</li>
+    <li>Lorenz condition</li>
+    <li>Poynting vector</li>
+    <li>Rayleigh-Jeans formula (*)</li>
+    <li>Johnson noise (*)</li>
+    <li>Nyquist formula (*)</li>
+    <li>Yagi-Uda antenna</li>
+    <li>Brewster condition/angle</li>
+    <li>Thomson cross section</li>
+    <li>Compton scattering</li>
+    <li>Clausius-Mosotti equation (*)</li>
+    <li>Bragg's law</li>
+    <li>Lorentz invariance (of charge, quantum phase)</li>
+    <li>d'Alembertian</li>
+    <li>Thomas precession</li>
+    <li>Mott scattering</li>
+    <li>Spin Hall effect</li>
+    <li>Huygens wavelet</li>
+    <li>Li&eacutenard-Wiechert potentials</li>
+    <li></li> 
+  </ul>
+  Other important things: <button class="sort-button" onclick="sortList4o()">Sort</button>
+  <ul id="id04other">
+    <li>Critical opalescence</li>
+    <li>Polarisation</li>
+    <li>Cross-section/effective area</li>
+    <li>Covariance </li>
+    <li>Vector potential</li>
+    <li>Photonic structures and metamaterials</li>
+    <li>Retarded potentials</li>
+    <li>Coherence</li>
+    <li>Method of images</li>
+    <li>Dichroism</li> 
+    <li>Birefringence</li>
+    <li>Dispersion relation</li>
+    <li>Optical indicatrix</li>
+    <li>Type I/II hyperboloid (of 1/2 sheets)</li>
+    <li>Photoelasticity</li> 
+    <li>Levo/dextrorotatory</li>
+    <li>Degree of polarisation</li>
+    <li>Fringe visibility/contrast</li>
+    <li>Cavity QED</li>
+    <li>Quasi-monochromaticity</li>
+    <li>Power spectrum</li>
+    <li>Broadening: lifetime, thermal, pressure </li> 
+    <li>Optical stethoscope</li>
+    <li>Degree of mutual/temporal coherence</li>
+    <li>Cambridge Optical Aperture Synthesis Telescope</li>
+    <li>Coherence area/volume</li>
+    <li>Superconducting QUantum Interference Device</li>
+    <li>Dipole approximation</li>
+    <li>Multipole expansion</li>
+    <li>Power gain for an antenna</li>
+    <li>Matched load/characteristic impedance</li>
+    <li>Postulates of special relativity</li>
+    <li>Spin-orbit coupling</li>
+    <li>Magnetism as a relativistic effect</li>
+    <li>Radiation from accelerated charges</li>
+    <li>Gyrofrequency</li>
+    <li>Cyclotron/synchrotron radiation</li>
+    <li></li> 
+  </ul>
+  </div>
+  
+  <br>
+  <button type="button" class="collapsible">TSP</button>
+  <div class="content">
+  <ul id="id05">
+  <button class="sort-button" onclick="sortList5()">Sort</button>
+    <li>Bose-Einstein condensate</li>
+    <li>Fermi-Dirac statistics</li>
+    <li>Debye theory</li>
+    <li>Dulong-Petit law</li>
+    <li>Kelvin formulation of the 2nd law</li>
+    <li>Clausius statement of the 2nd law</li>
+    <li>Boltzmann entropy</li>
+    <li>Gibbs entropy</li>
+    <li>Shannon entropy</li>
+    <li>Gibbs free energy</li>
+    <li>Helmholtz free energy</li>
+    <li>Fermi gas</li>
+    <li>Bose gas</li>
+    <li>Landau theory of phase transitions</li>
+    <li>Gibbs-Duhem equation</li>
+    <li>Clausius-Clapeyron equation</li>
+    <li>van der Waals equation of state</li>
+    <li>Fermi energy</li>
+    <li>Fermi surface</li>
+    <li>Langmuir adsorption isotherm</li>
+    <li>Brownian motion</li>
+    <li>Liouville's theorem (*)</li>
+    <li>Pauli exclusion</li>
+    <li>Boltzmann factor</li>
+    <li>Fermi factor</li>
+    <li>Maxwell relations</li>
+    <li>Dalton's law</li>
+    <li>Carnot engine/cycle (*)</li>
+    <li>Otto cycle (*)</li> 
+    <li>Clausius-Clapeyron equation</li>
+    <li>Joule expansion (*)</li>
+    <li>Carath&eacuteodory statement of the 2nd law</li>
+    <li>Nernst formulation of the 3rd law</li>
+    <li>Legendre transformations</li>
+    <li>Sackur-Tetrode formula</li>
+    <li>Schr&oumldinger equation</li> 
+    <li>Planck distribution</li>
+    <li>Schottky anomaly (*)</li>
+    <li>Gibbs paradox</li>
+    <li>Maxwell demon</li>
+    <li>Maxwell-Boltzmann distribution (energies)</li>
+    <li>Maxwell distribution (speeds)</li> 
+    <li>Debye frequency</li>
+    <li>Coulomb repulsion</li>
+    <li>Landau-Peierls instability (*)</li>
+    <li>Lennard-Jones potential</li> 
+    <li>Boyle temperature</li>
+    <li>Ising model</li>
+    <li>Ehrenfest's classification scheme (*)</li>
+    <li>Osnager's 2D Ising model ("mathematical tour de force")</li> 
+    <li>Curie-Weiss law (*)</li>
+    <li>Curie temperature (*)</li> 
+    <li>Langevin equation</li>
+    <li>Fick's laws (diffusion equation)</li> 
+    <li>Fokker-Planck equation</li>
+    <li>Kramers problem</li>
+    <li>Arrhenius rate law</li>
+    <li>Markov process (*)</li>
+    <li>Gibbs factor</li>
+    <li>Sommerfeld coefficient</li>
+    <li>Sommerfeld expansion</li>
+    <li>Stefan-Boltzmann law</li> 
+  </ul>
+  Other important things: <button class="sort-button" onclick="sortList5o()">Sort</button>
+  <ul id="id05other">
+    <li>Mean field theory</li> 
+    <li>Equipartition theorem</li>
+    <li>(grand) Partition function</li>
+    <li>(grand) (micro) Canonical ensemble</li>
+    <li>Reservoir</li>
+    <li>Principle of Equal Equilibrium Probability (a priori)</li> 
+    <li>Phase space</li>
+    <li>Chemical potential</li>
+    <li>Thermal wavelength</li>
+    <li>Critical exponents/points</li>
+    <li>Fluctuations</li>
+    <li>Adiabaticity</li>
+    <li>Heat, energy</li>
+    <li>Master equation for internal energy</li>
+    <li>Availability</li>
+    <li>Enthalpy</li>
+    <li>Thermodynamic potentials</li>
+    <li>Heat capacity (in various forms...)</li>
+    <li>Equilibrium constant</li>
+    <li>Microstates vs macrostates</li>
+    <li>Classical partition function</li>
+    <li>Degeneracy</li>
+    <li>Law of Mass Action (*)</li>
+    <li>Spin waves</li>
+    <li>Rotons</li> 
+    <li>Quantum concentration</li>
+    <li>Virial theorem, expansion</li> 
+    <li>Radial distribution function</li>
+    <li>Entropy of mixing</li>
+    <li>Spinodal/binodal lines</li>
+    <li>Order of phase transitions</li>
+    <li>Order parameter</li> 
+    <li>Fluctuation dissipation theorem</li>
+    <li>Critical opalescence</li>
+    <li>Stochastic force</li>
+    <li>Response function</li>
+    <li>Pair distribution function</li>
+    <li>Saddle point approximation</li>
+    <li>Broken symmetry</li>
+    <li>Interaction potential</li>
+    <li>Universality class</li> 
+    <li></li>
+  </ul>
+  </div>
+
+  <br>
+  <button type="button" class="collapsible">Comp</button>
+  <div class="content">
+  <ul id="id06">
+  <button class="sort-button" onclick="sortList6()">Sort</button>
+    <li>Moore-Penrose pseudoinverse</li>
+    <li>Levenberg-Marquardt algorithm (hill climbing/gradient descent)</li>
+    <li>Markov-Chain Monte-Carlo methods</li>
+    <li>Nelder-Mead simplex method</li>
+    <li>Bayes Theorem, Bayesian inference</li>
+    <li>Nyquist-Shannon Sampling Theorem</li>
+    <li>Onsager's analytic solution for the 2D Ising Model</li>
+    <li>Metropolis-Hastings Algorithm</li>
+    <li>Simpson's Rule</li>
+    <li>Runge-Kutta Methods</li>
+    <li>Newton-Cotes Methods</li>
+    <li>Eulerian Numerical Integration</li>
+    <li>The Heisenbug - it disappears when you try to observe it!</li>
+    <li>Verlet Method</li>
+    <li></li>
+  </ul>
+  Other important things: <button class="sort-button" onclick="sortList6o()">Sort</button>
+  <ul id="id06other">
+    <li>Singular Value Decomposition</li>
+    <li>Universal approximation theorem</li>
+    <li>(deep) Neural networks</li>
+    <li>Vectorisation</li>
+    <li>Fast Fourier Transform (+DFT etc)</li>
+    <li>Violin modes (LIGO)</li>
+    <li>PRNGs</li>
+    <li>Linear Congruential Method</li>
+    <li>Docstrings</li>
+    <li>Machine precision</li>
+    <li>Symplectic integrators (not sure if I spelled that right)</li>
+    <li>Instrinsic instability</li>
+    <li>Algorithmic complexity</li>
+    <li>Roundoff error</li>
+    <li>IEEE</li>
+    <li>Version control - Git, Hg, VSD (or something)</li>
+    <li>Dynamic, static, interpreted, compiled, high/low-level etc... languages</li>
+    <li></li>
+  </ul>
+  </div>
+
+  <br>
+  <button type="button" class="collapsible">P+N (N part not done yet)</button>
+  <div class="content">
+  <ul id="id07">
+  <button class="sort-button" onclick="sortList7()">Sort</button>
+    <li>Drell-Yan processes</li>
+    <li>N&oumlther's Theorem</li>
+    <li>Lorentz invariance</li>
+    <li>Minkowski metric</li>
+    <li>Fermi's Golden Rule</li>
+    <li>Breit-Wigner Distribution/resonance/cross-section</li>
+    <li>Yukawa Potential</li>
+    <li>Born approximation for differential cross section (rel case)</li>
+    <li>Rutherford scattering</li>
+    <li>Coulomb potential</li>
+    <li>Bohr model of resonant scattering</li>
+    <li>Bethe-Block formula for ionisation loss</li>
+    <li>Feynman diagrams</li>
+    <li>Klein-Gordon equation</li>
+    <li>Feynman-St&uumlckelberg interpretation</li>
+    <li>Compton wavelength</li>
+    <li>Fermions, Bosons</li>
+    <li>(doubly) Cabibbo favoured/suppressed</li>
+    <li>Mandelstam variables/channels</li>
+    <li>Maxwell, Schr&oumldinger equations</li>
+    <li>Hofstadter's experiment</li>
+    <li>Dirac equation</li>
+    <li>Geiger-Marsden experiment</li>
+    <li>Pauli exclusion principle</li>
+    <li>Abelian vertices (?)</li>
+    <li>Gell-Mann plots (8-fold way)</li>
+    <li>Bohr magneton</li>
+    <li>Zweig rule</li>
+    <li>Fermi theory of weak interactions (+ constant)</li>
+    <li>Wu experiment(+ "strength" of quantum numbers?)</li>
+    <li>Sargent Rule</li>
+    <li>Cabibbo angle</li>
+    <li>Cabibbo-Kobayashi-Maskawa matrix</li>
+    <li>GWS model</li>
+    <li>Higgs mechanism/boson (Englert, Brout, Hagen, ...)</li>
+    <li>Yukawa couplings</li>
+    <li>PNMS matrix</li>
+    <li>Planck scale</li>
+    <li>Poincar&egrave symmetry</li>
+    <li>Heaviside-Lorentz system</li>
+    <li>Dalitz decay</li>
+    <li></li>
+    <li>M&oumlssbauer effect (?)</li>
+    <li>Zegr&eacute chart</li>
+    <li>Fermi gas model</li>
+    <li>Born approximation for electron scattering</li>
+    <li>Rutherford scattering</li>
+    <li>Fermi parameterisation</li>
+    <li>Saxon-Woods potential</li>
+    <li>Schmidt limits</li>
+    <li>Gamow factor</li>
+    <li>Geiger-Nuttall law</li>
+    <li>Fermi theory for beta decay</li>
+    <li>Saregant's rule</li>
+    <li>Fermi transitions</li>
+    <li>Gamow-Teller transitions</li>
+    <li>Kurie plot (*)</li>
+    <li>Maxwell-Boltzmann distribution (for particles in the Sun)</li>
+    <li>Lawson criterion</li>
+    <li></li>
+  </ul>
+  Other important things: <button class="sort-button" onclick="sortList7o()">Sort</button>
+  <ul id="id07other">
+    <li>Confinement (inertial vs magnetic, eg Tokamak)</li>
+    <li>Ignition, break even, triple product (n*T*tau)</li>
+    <li>DT reaction</li>
+  	<li>Creating heavy elements</li>
+    <li>"Solar neutrino problem" (SNO collaboration)</li>
+    <li>PP1, PP2, PP4 chain, CNO cycle</li>
+    <li>Standard solar model</li>
+    <li>Fusion barrier = Coulomb barrier - energy released</li>
+    <li>Nuclear meltdown</li>
+    <li>Fission reactors (fuel, moderator, control rods, cooling system)</li>
+    <li>Chain reaction, critical mass</li>
+    <li>Neutron induced fission (thermal, prompt, delayed neutrons)</li>
+    <li>Fission barrier</li>
+    <li>Symmetric fission</li>
+    <li>Fusion</li>
+    <li>Fission (incl spontaneous)</li>
+    <li><i>n</i>th forbidden </li>
+    <li>Comparative half-life, (super-)allowed/forbidden transitions</li>
+  	<li>Neutrino discovery</li>
+  	<li>P non-conservation in beta decay</li>
+    <li>Centrifugal barrier (alpha) (*)</li>
+    <li>Selection rules in alpha decay</li>
+    <li>Tunneling in alpha decay</li>
+    <li>Radioactive dating</li>
+    <li>Mean lifetime vs half-life</li>
+    <li>Internal conversion (gamma decay)</li>
+    <li>Electron/positron emission, electron capture</li>
+    <li>Radioactivity</li>
+    <li>Moment of inertia</li>
+    <li>Phonons in multipole expansion of excited states (ratio)</li>
+    <li>Excited states (single nucleon, vibrational, rotational)</li>
+    <li>Proximity to closed shells effecting J^P of ground state</li>
+    <li>Spin-orbit interaction (cf Mayer and Jensen 1949)</li>
+    <li>Magic numbers (incl doubly magic)</li>
+  	<li>Nuclear shell model</li>
+    <li>Nuclear shape (multipole expansion, prolateness etc)</li>
+    <li>Nuclear vs atomic mass</li>
+    <li>Mirror nuclei</li>
+  	<li>Muonic atoms</li>
+    <li>(scattering) Form factor</li>
+    <li>Nuclear parity</li>
+    <li>Nuclear spin (incl j-j coupling)</li>
+    <li>Semi-empirical mass formula (volume, surface, coulomb, assymetry, 
+    pairing, gravitational terms)</li>
+    <li>Liquid drop model</li>
+    <li>Separation energy</li>
+    <li>Binding energy (per nucleon)</li>
+    <li>Strong nuclear force (incl range and saturation)</li>
+    <li>NMR</li>
+    <li></li>
+    <li>(Differential) cross section</li>
+    <li>Isotopes, isobars, isotones</li>
+    <li>Virtual exchanegs, antiparticles</li>
+    <li>Natural units, barns</li>
+    <li>Branching fraction/ratio</li>
+    <li>Invariant energy/mass</li>
+    <li>Calorimeters, detectors, muon spectrometer</li>
+    <li>Hadron jets</li>
+    <li>Particle signatures</li>
+    <li>Parton distribution functions</li>
+    <li>Gauge field theory</li>
+    <li>Annihilation/pair production</li>
+    <li>Virtual (on-shell_ vs physical (off-shell) mass</li>
+    <li>Propagator</li>
+    <li>Triple gauge vertex</li>
+    <li>Flavour CHanging Neutral Currents</li>
+    <li>Bremsstrahlung</li>
+    <li>J/psi decay</li>
+    <li>Anomalous magnetic moment</li>
+    <li>Colour in QCD; colour charge</li>
+    <li>Colour flow</li>
+    <li>Confinement in QCD</li>
+    <li>Running of coupling constants, antiscreening</li>
+    <li>Flavour</li>
+    <li>Charm/bottomonium</li>
+    <li>SUSY/sparticles</li>
+    <li>Intrinsic parity</li>
+    <li>CPT Symmetry (or violation!)</li>
+    <li>GUT, TOE, Electroweak Unification</li>
+    <li>Pseudoscalar mesons</li>
+    <li>Strangeness</li>
+    <li>Colour magnetic interaction</li>
+    <li>Meson mass formula</li>
+    <li>Baryon mass formula</li>
+    <li>Lattice QCD</li>
+    <li>Nuclear magneton</li>
+    <li>Three step process for classifying hadron decays: kinematics, Feynman diagram, check if J and P conserved (and which l allow this)</li>
+    <li>D-mesons</li>
+    <li>Tetraquarks/pentaquarks</li>
+    <li>Unitarity limit</li>
+    <li>Self-interaction</li>
+    <li>Helicity</li>
+    <li>Maximal violation</li>
+    <li>Charge conjugation</li>
+    <li>Generation (of fermion)</li>
+    <li>Lepton universality</li>
+    <li>Weak hypercharge</li>
+    <li>LEP, OPAL, DESY, SLAC, Fermilab, Gargamelle, SPS, ATLAS, CMS, LHCb, ALICE</li>
+    <li>b-tagging</li>
+    <li>Problems witht the SM</li>
+    <li>Neutrino oscillations (Super-K)</li>
+    <li>R-parity</li>
+    <li></li>
+  </ul>
+  </div>
+
+  <br>
+  <button type="button" class="collapsible">SCM</button>
+  <div class="content">
+  <ul id="id08">
+  <button class="sort-button" onclick="sortList8()">Sort</button>
+  	<li>Young's Modulus</li>
+  	<li>Navier-Stokes equation</li>
+  	<li>Newtonian fluid</li>
+  	<li>Eulerian velocity field</li>
+  	<li>Lagrangian (material, convective) derivative</li>
+  	<li>Reynolds number</li>
+  	<li>Stokes flow, drag</li>
+  	<li>Couette flow (and viscometer)</li>
+  	<li>Poiseuille flow</li>
+  	<li>Brownian motion</li>
+  	<li>Langevin equation</li>
+  	<li>Hooke's law</li>
+  	<li>Poisson's ratio</li>
+  	<li>Maxwell fluid (emulsions, surfactants)</li>
+  	<li>Kelvin-Voigt solid</li>
+  	<li>Zener standard linear solid</li>
+  	<li>Stokes-Einstein relation</li>
+  	<li>Boltzmann factor</li>
+  	<li>Fick's law(s)</li>
+  	<li>(generalised) Einstein relation</li>
+  	<li>[Markov process]</li>
+  	<li>Ostwald ripening</li>
+  	<li>Schmolukowski rate/limit/equation</li>
+  	<li>Fokker-Planck equation (cf Schmolukowski)</li>
+  	<li>Kramers problem</li>
+  	<li>Arrhenius factor</li>
+  	<li>Laplace transform</li>
+  	<li>Gaussian chain statistics</li>
+  	<li>[Ramachandran plot]</li>
+  	<li>Kuhn length/segment</li>
+  	<li>Kratky-Porod (worm-like) chain</li>
+  	<li>Helmholtz free energy</li>
+  	<li>Flory parameter</li>
+  	<li>Flory-Huggins free energy</li>
+  	<li>Rouse time</li>
+  	<li>Zimm-Bragg model (nearest neighbour cooperative)</li>
+  	<li>Poisson-Blotzmann equation</li>
+  	<li>Debye length</li>
+  	<li>Helfrich model for membrane fluctuations</li>
+  	<li>Monge paramterisation</li>
+  	<li>van der Waals interactions</li>
+  	<li>Wilhelmy plate / Du Nuoy ring (*)</li>
+  	<li>Newtonian fluid</li>
+  	<li>Hamaker constant</li>
+  	<li>Laplace disjoining pressure</li>
+  	<li>Gibbs-Duhem equation</li>
+  	<li>Gibbs adsorption isotherm</li>
+  	<li>Young's wetting equation</li>
+  	<li>Pauli exlcusion (excluded volume interactions)</li>
+  	<li>(London) dispersion forces</li>
+  	<li>Bjerrum length</li>
+  	<li>Poisson-Boltzmann equation</li>
+  	<li>Debye-H&uumlckel equation, screening length</li>
+  	<li>Boltzmann factors</li>
+  	<li>Gouy-Chapman length (*)</li>
+  	<li>DLVO theory</li>
+  	<li>Thin Debye-layer limit</li>
+  	<li>Fick's law</li>
+  	<li>Donnan potential (*)</li>
+  	<li>Helmholtz-Smoluchowski equation</li>
+  	<li>K&oumlhler illumination (*)</li>
+  	<li>Inner/outer Helmholtz plane</li>
+  	<li>Stern layer</li>
+  	<li>Galvani potential (*)</li>
+  	<li>Rouse model</li>
+  	<li>Zimm model</li>
+  	<li>Flory exponent</li>
+  	<li>Edwards tube</li>
+  	<li>Bessel functions outside optics (use of) </li>
+  	<li>Manning condensation (*)</li>
+  	<li></li>
+  </ul>
+  Other important things: <button class="sort-button" onclick="sortList8o()">Sort</button>
+  <ul id="id08other">
+  	<li>Electrophoretic tether force</li>
+  	<li>Reptation</li>
+  	<li>Gel electrophoresis</li>
+  	<li>EDL capacitance</li>
+  	<li>Optical tweezers</li>
+  	<li>Electrophoretic mobility</li>
+  	<li>Streaming potential (incl energy generation)</li>
+  	<li>Electro-osmosis vs -phoresis</li>
+  	<li>Electrical double layer</li>
+  	<li>Phase diagrams of colloid suspensions</li>
+  	<li>Steric, depletion interactions</li>
+  	<li>Counter-ions</li>
+  	<li>Zeta-potential</li>
+  	<li>Electrolyte solutions (dilute, concentrated)</li>
+  	<li>Tobacco mosaic virus (*)</li>
+  	<li>Colloid</li>
+  	<li>Wetting parameter</li>
+  	<li>Critical micelle concentration</li>
+  	<li>Degree of hydrophobicity</li>
+  	<li>Surfactant solubility</li>
+  	<li>Membrane</li>
+  	<li>Lipid bilayer (H/L/Q/V)</li>
+  	<li>Amphiphiles</li>
+  	<li>Head area/critical chain length/hydrocarbon volume</li>
+  	<li>Calorimetry</li>
+  	<li>Differential geometry</li>
+  	<li>Mean/Gaussian/local/principal curvature </li>
+  	<li>Crossover wavevector</li>
+  	<li>Fluctuation spectrum (aka static structure factor) [flicker 
+  	spectroscopy]</li>
+  	<li>Plasma membrane (*)</li>
+  	<li>Self-assembled structures: viruses, nanotech, patterns</li>
+  	<li>Typical persistence lengths</li>
+  	<li>Surfance energy/tension</li>
+  	<li>Capillarity</li>
+  	<li></li>
+  	<li></li>
+  	<li></li>
+  	<li>Momentum flux</li>
+  	<li>Continuity equation</li>
+  	<li>Scallop theorem (Purcell)</li>
+  	<li>Vorticity</li>
+  	<li>Microfluidics</li>
+  	<li>Bulk/shear modulus</li>
+  	<li>Viscoelasticity</li>
+  	<li>Complex modulus</li>
+  	<li>Fluctuation-dissipation theorem</li>
+  	<li>Diffusion equation</li>
+  	<li>Reaction/diffusion-controlled processes</li>
+  	<li>Microrheology</li>
+  	<li>Polymerisation</li>
+  	<li>Polydispersity</li>
+  	<li>Ideal chain</li>
+  	<li>Lattice polymer</li>
+  	<li>Freely jointed chain</li>
+  	<li>Bead spring model</li>
+  	<li>Segment correlation function</li>
+  	<li>Random walk</li>
+  	<li>Bending rigidity</li>
+  	<li>Equipartition theorem</li>
+  	<li>Excluded volume</li>
+  	<li>Coil-globule transition</li>
+  	<li>Helix-coil transition</li>
+  	<li>theta-point</li>
+  	<li>Entropy of an ideal chain</li>
+  	<li>Osmotic pressure/osmolarity</li>
+  	<li>Polymer solutions</li>
+  	<li>Polymer pahse diagram</li>
+  	<li>Virial expansion</li>
+  	<li>Overlap concentration</li>
+  	<li>Grafting density</li>
+  	<li>Mushroom vs brush regime </li>
+  	<li>Rubber elasticity (Flory's affine network model)</li>
+  	<li>Normal modes</li>
+  	<li>(non-/fully) cooperative model</li>
+  	<li>Transfer matrix</li>
+  	<li>Hydrogen bonding</li>
+  	<li>Hydrophobicity (+ amphiphiles)</li>
+  	<li>Electrostatic screening</li>
+  	<li>Clusters, aggregates, micelles, surfactants</li>
+  	<li>Critical micelle concentration</li>
+  	<li>Packing parameter</li>
+  	<li>Protein filaments</li>
+	<li>Radius of gyration</li>
+	<li></li>
+  </ul>
+  </div>
+  
+  <br>
+  <button type="button" class="collapsible">AFD (coming soon)</button>
+  <div class="content">
+  <ul id="id09">
+  <button class="sort-button" onclick="sortList9()">Sort</button>
+    <li></li> 
+  </ul>
+  Other important things: <button class="sort-button" onclick="sortList9o()">Sort</button>
+  <ul id="id09other">
+    <li></li>
+  </ul>
+  </div>
+  
+  
+  <br>
+  <button type="button" class="collapsible">QCM</button>
+  <div class="content">
+  <ul id="id10">
+  <button class="sort-button" onclick="sortList10()">Sort</button>
+    <li>Lorentz (dipole) oscillator</li> 
+    <li>Drude model</li>
+    <li>Ohm's law</li>
+    <li>(quantum) Hall effect/coefficient/velocity</li>
+    <li>Wiedemann-Franz law (*)</li>
+    <li>Sommerfeld theory (of electrons as a degenerate quantum gas)</li>
+    <li>Dulong-Petit law</li>
+    <li>Fermi gas</li>
+    <li>Debye heat capacity</li>
+    <li>Fermi surface, energy, wavevector</li>
+    <li>Thomas-Fermi approximation (screening theory - linearised) [cf Debye-H&uumlckel, Yukawa]</li>
+    <li>Coulomb potential</li>
+    <li>Pauli exclusion principle</li>
+    <li>Lennard-Jones potential</li>
+    <li>Madelung term/constant (*)</li>
+    <li>Vogel-Fulcher law (for glasses) (*)</li>
+    <li>Bravais lattice</li>
+    <li>Penrose tiling (*)</li>
+    <li>Wigner-Seitz cell</li>
+    <li>Brillouin zone</li>
+    <li>Miller indices</li>
+    <li>Bragg diffraction</li>
+    <li>Raman spectra (*)</li>
+    <li>Debye density of states, temperature</li>
+    <li>Einstein solid</li>
+    <li>Planck distribution</li>
+    <li>Bose-Einstein statistics</li>
+    <li>Schr&oumldinger equation</li>
+    <li>Bloch's theorem (from plane wave basis to SE / discrete translational 
+    symmetry</li>
+    <li>Mott insulators (*)</li>
+    <li>Bloch oscillations</li>
+    <li>Wannier-Stark ladder (*)</li>
+    <li>de Haas-van Alphen effect (quantum oscillations)</li>
+    <li>Landau tubes</li>
+    <li>Onsager relation </li>
+    <li>Shubnikov-de Haas effect (*)</li>
+    <li>Schottky barrier/diode</li>
+    <li>Schockley-Queisser limit</li>
+    <li>Peierls transition</li>
+    <li>Bohr-van Leeuwen theorem (*)</li>
+    <li>Curie law/temperature</li>
+    <li>Bohr magneton</li>
+    <li>Rydberg constant</li>
+    <li>Heinsenberg Hamiltonian</li>
+    <li>Pauli paramagnetism</li>
+    <li>Zeeman splitting (*)</li>
+    <li>Stoner-Hubbard model (*)</li>
+    <li>Stoner criterion</li>
+    <li>RKKY interaction</li>
+    <li>Weiss exchange field</li>
+    <li>Fermi liquid theory (Landau)</li>
+    <li>van der Waals attraction</li>
+    <li>Luttinger's theorem (*)</li>
+    <li>Sommerfeld coefficients</li>
+    <li>Bohr-Sommerfeld quantisation condition</li>
+    <li></li>
+  </ul>
+  Other important things: <button class="sort-button" onclick="sortList10o()">Sort</button>
+  <ul id="id10other">
+    <li>Polarisability, permeability, reflectivity, </li>
+    <li>Plasma oscillations</li>
+    <li>Electron Energy Loss Spectroscopy (*)</li>
+    <li>DC/AC</li>
+    <li>Plasma frequency</li>
+    <li>Density of states</li>
+    <li>Degeneracy</li>
+    <li>Jellium (*)</li>
+    <li>Covalent/ionic crystals, inert gases, metals, glasses, polymers, 
+    liquid crystals (nematic, cholesteric, smectic), quasicrystals</li>
+    <li>Molecular beam epitaxy (*)</li>
+    <li>STM/AFM</li>
+    <li>Lattice, bases, primitivity, unit cell, motif, point/space group</li>
+    <li>Reciprocial lattice</li>
+    <li>Phonons</li>
+    <li>Acoustic/optical modes</li>
+    <li>Band index</li>
+    <li>Nearly Free electron theory (degenerate 2PT)</li>
+    <li>Extended zone scheme (*)</li>
+    <li>Hybridisation</li>
+    <li>Tight binding LCAO (crystal field, hopping matrix)</li>
+    <li>Pseudopotentials (orthongonalised plane waves)</li>
+    <li>Crystal momentum</li>
+    <li>Proof of volume per k-point</li>
+    <li>Notational points for describing k-space lattice: Gamma, X, Y, Z, L, K</li>
+    <li>Semimetals (vs zero-gap semiconductors)</li>
+    <li>In/direct band gaps</li>
+    <li>Electrons and holes (and relative momenta, velocities, energy, mass, 
+    charge)</li>
+    <li>Experimental probs of bandstructure: 
+    optical transitions, photoemission, dHvA, tunnelling</li>
+    <li>Luminescence vs e-h recombination</li>
+    <li>Angular Resolved PhotoEmission Spectroscopy (*)</li>
+    <li>Canonical momentum</li>
+    <li>Light/heavy hole bands</li>
+    <li>Effective mass relation to band curvature</li>
+    <li>Intrinsic carrier concentration</li>
+    <li>Doping, donor/acceptor levels, impurities, n/p-type, 
+    intrinsic/extrinsic</li>
+    <li>p-n junction</li>
+    <li>Metal-semiconductor contact (incl rectification)</li>
+    <li>Depletion region, potentials, minority/majority carriers</li>
+    <li>Drift/generation current</li>
+    <li>Diffusion/recombination current</li>
+    <li>Saturation current in diodes (Arrhenius form)</li>
+    <li>Solar cell</li>
+    <li>Photovoltaic effect</li>
+    <li>LEDs</li>
+    <li>Field Effect Transistor (incl JFET, MOSFET)</li>
+    <li>Gate, drain, source</li>
+    <li>Pinch-off, amplifier</li>
+    <li>Inversion layer</li>
+    <li>Bandstructure engineering (inversion layers, quantum wells, quantum 
+    well laser)</li>
+    <li>General Hamiltonian for many-particle system in QCM</li>
+    <li>Positronium</li>
+    <li>Plasmons, magnons, shear waves,</li>
+    <li>Charge density waves</li>
+    <li>Periodic lattice distortion</li>
+    <li>Solitons (in polyacetylene)</li>
+    <li>Sliding in incommensurate CDWs</li>
+    <li>Direct exchange (local magnetic moments) - triplons?</li>
+    <li>Superexchange and insulating antiferromagnets </li>
+    <li>Mean field approx.</li>
+    <li>Collective excitations</li>
+    <li>Principle of adiabatic continuity</li>
+    <li>Quasiparticle (holes) scattering</li>
+    <li>Electron spectral function</li>
+    <li>Heavy fermions</li>
+    <li>Renormalised band picture</li>
+    <li></li>
+    <li></li>
+  </ul>
+  </div>
+  
+
+  <br>
+  <button type="button" class="collapsible">General/other</button>
+  <div class="content">
+  <ul id="id11">
+  <button class="sort-button" onclick="sortList11()">Sort</button>
+    <li>Taylor series</li>
+    <li>Ockham's rasor</li>
+    <li>Nyquist theorem</li>
+    <li>Schotty noise</li>
+    <li>Johnson noise</li>
+    <li>Boltzmann constant</li>
+    <li>Planck constant</li>
+    <li>Rydberg constant</li>
+    <li>Bohr magneton</li>
+    <li>Heaviside step function</li>
+    <li>Units: Pascal, Kelvin, Joule, Newton, .... (basically all capitalised ones)</li> 
+    <li>Laplacian</li>
+    <li>Fourier transform</li>
+    <li>Stirling's approximation</li>
+    <li>Lorentz force</li>
+    <li>Lagrangian (density)</li>
+    <li>Hamiltonian</li>
+    <li>Euler-Lagrange equations</li>
+    <li></li>
+    <li></li>
+  </ul>
+  </div>
+  
+  
+  
+  
+  <h2>Part III</h2>
+  
+  
+  
+  <br>
+  <button type="button" class="collapsible">Geophysics</button>
+  <div class="content">
+  <ul id="id12">
+  <button class="sort-button" onclick="sortList12()">Sort</button>
+    <li>Boussinesq approximation</li>
+    <li>Stokes equation</li>
+    <li>Cauchy equation</li>
+    <li>Euler's theorem for rigid body motion on a sphere</li>
+    <li>Maxwell equations</li>
+    <li>Airy isostasy</li>
+    <li>Pratt isostasy</li>
+    <li>Coble creep</li>
+    <li>Nabarro-Herring creep</li>
+    <li>Fourier's law fo heat conduction</li>
+    <li>Föppl–von Kármán equations</li>
+    <li>Rayleigh-Ben&aacuterd cells</li>
+    <li>Langmuir circulation</li>
+    
+    <li>Christoffel equation, matrix</li>
+    <li>Lam&eacute parameters</li>
+    <li>Snell's law (generalised to elastic waves)</li>
+    <li>Stonley waves</li>
+    <li>Jacobian</li>
+    <li>Hamilton's principle</li>
+    <li>Piola-Kirchhoff stress tensor (first and second)</li>
+    <li>Cauchy-Green deformation tensor (right and left)</li>
+    <li>Hooke's "law"</li>
+    <li>Dirac surface distribution</li>
+    <li>Backus-Gilbert estimators</li>
+    
+    <li>Darcy's law</li>
+		<li>Rayleigh-Taylor instability</li>
+		<li>Dimensionless numbers (Rayleigh, Reynolds, Prandtl, Peclet, Nusselt,...)</li>
+		<li>Buckingham pi theorem</li>
+		<li>Lou Howard's 1956 argument</li>
+		<li>Coble creep</li>
+		<li>Urey ratio, paradox</li>
+		<li>Adams-Williamson equations (*)</li>
+		<li></li>
+  </ul>
+  Other important things: <button class="sort-button" onclick="sortList12o()">Sort</button>
+  <ul id="id12other">
+    <li>Reference ellipsoid</li>
+    <li>Geoid</li>
+    <li>Magentic anomaly</li>
+    <li>Gravity anomaly (incl free-air)</li>
+    <li>Heat flow anomaly</li>
+    <li>Triple junction (incl stability)</li>
+    <li>Ridge, trench, fault</li>
+    <li>Compressional (P) waves</li>
+    <li>Shear (S) waves</li>
+    <li>Olivine</li>
+    <li>Circles (great and small)</li>
+    <li>Magnetic inclination</li>
+    <li>Latitude, longitude</li>
+    <li>Theodolite</li>
+    <li>Creep, homologous stress, dislocations</li>
+    <li>Avection-diffusion equation</li>
+    <li>Half-space cooling</li>
+    <li>Self-similarity</li>
+    <li>Bathymetry</li>
+    <li>Postglacial uplift</li>
+    <li>Biharmonic operator</li>
+    <li>Scaling analysis</li>
+    <li>Misfit</li>
+    <li>Forebulge</li>
+    <li>Hydrostatic equilibrium</li>
+    <li>Fluid instabilities: zigzag, cross-roll (bimodal), spoke</li>
+    <li>Shadowgraph</li>
+    <li>Planform</li>
+    <li>Spherical sine rule</li>
+    <li>Admittance</li>
+    <li>Ridge push</li>
+		<li>Slab pull</li>
+		<li>Aspect ratio</li>
+		<li>Rolls, cells, spokes, bimodal, zigzag, </li>
+		<li>Kinematic boundary condition</li>
+		<li>Thermal history, radiogenic heating</li>
+		<li>Creep</li>
+		
+    
+    
+    <li>Slowness surface, vector</li>
+    <li>Phase speed</li>
+    <li>Polarisation vector</li>
+    <li>Hyperelastic symmetry</li>
+    <li>P- and S- waves (incl quasi)</li>
+    <li>Reflection, transmission, conversion</li>
+    <li>Shear wave splitting</li>
+    <li>Reference body</li>
+    <li>Inverse problem</li>
+    <li>Deformation gradient</li>
+    <li>Inverse function theorem</li>
+    <li>Referential density</li>
+		<li>Strain energy function</li>
+		<li>Principle of material frame indifference</li>
+		<li>Natural boundary conditions</li>
+		<li>Constitutive theory</li>
+		<li>Polar decomposition theorem</li>
+		<li>Constitutive relation</li>
+		<li>Stream function</li>
+		<li>Traction</li>
+		<li>Linearised strain tensor</li>
+		<li>Elastodynamic equation</li>
+		<li>Material symmetry group</li>
+		<li>Elastic tensor</li>
+		<li>Elastic fluids</li>
+		<li>Kinematic source approximation</li>
+		<li>Elastic rebound theory</li>
+		<li>Stress glut</li>
+		<li>Displacement discontinuity vector</li>
+		<li>Adjoint method, adjoint displacement field</li>
+		<li>Sensitivity kernel</li>
+		<li>Banana doughnut kernels</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+  </ul>
+  </div>
+  
+  
+  
+  <br>
+  <button type="button" class="collapsible">Biophysics</button>
+  <div class="content">
+  <ul id="id13">
+  <button class="sort-button" onclick="sortList13()">Sort</button>
+    <li>Fisher-Kolmogorov-Petrovsky-Piskunov equation</li>
+    <li>Wright-Fisher model</li>
+    <li>Luria-Delbrück experiment</li>
+    <li>Erdős–Rényi random graph</li>
+    <li>Kardar–Parisi–Zhang equation, universality class</li>
+    <li>Courant number</li>
+    <li>Nernst potential</li>
+    <li>Nernst-Planck equation</li>
+    <li>Turing patterns</li>
+    <li>Bak-Sneppen model</li>
+    <li>Eden model</li>
+    <li>Moran model</li>
+		<li>Island model</li>
+		<li>Brownian motion (incl rectified)</li>
+		<li>Smoluchowski equation</li>
+		<li>Goldman equation (*)</li>
+		<li>Hebbian learning (*)</li>
+		<li>Donnan ratio (*)</li>
+		<li>Michaelis-Menten kinetics</li>
+		<li>Gierer-Meinhardt model</li>
+		<li>Barab&aacutesi/Albert model (*)</li>
+		<li>Hill function</li>
+		<li>Langmuir adsorption isotherm</li>
+		<li>Hodgkin-Huxley model</li>
+		<li>Gillespie algorithm (1977)</li>
+		<li>Oscillations in gene expression</li>
+		<li>Lotka-Volterra predator-prey model</li>
+		<li></li>
+		<li></li>
+  </ul>
+  Other important things: <button class="sort-button" onclick="sortList13o()">Sort</button>
+  <ul id="id13other">
+    <li>Reaction-diffusion equation</li>
+    <li>Cable equation</li>
+    <li>Molecular motors</li>
+    <li>Central dogma</li>
+    <li>Percolation transition</li>
+    <li>Cluster</li>
+    <li>Degree (distribution)</li>
+    <li>Heterozygosity</li>
+    <li>Ploidy (diploid, haploid)</li>
+		<li>Biallelic</li>
+		<li>Most recent common ancestor</li>
+		<li>Slection vs drift in evolution</li>
+		<li>Fixation (of a mutation)</li>
+		<li>Deleterious</li>
+		<li>Fitness</li>
+		<li>Mechanical analogy for emergence of antibiotic resistance</li>
+		<li>Axons, cell body, dendrites, terminal branches, synapses</li>
+		<li>Action potential (spike)</li>
+		<li>Conductance (per unit area)</li>
+		<li>Depolarisation waves</li>
+		<li>Computational power</li>
+		<li>Optical tweezers</li>
+		<li>Flagellae</li>
+		<li>Polymerase (RNA/DNA)</li>
+		<li>Transcription, translation, replication</li>
+		<li>Thermal ratchet</li>
+		<li>Branching-annihilating random walk</li>
+		<li>Wild type population</li>
+		<li>Dwell time distributions</li>
+		<li>Chemotaxis</li>
+		<li>Leaky Integrate and Fire model</li>
+		<li>Scale free network</li>
+		<li>Distance, diameter, adjacency matrix</li>
+		<li>Bifurcations: saddle-node, transcritical, pitchfork</li>
+		<li>Control space</li>
+		<li>Catastrophe theory</li>
+		<li>Dynamical vs control variables</li>
+		<li>Fixed points + their stability (of a dynamical system)</li>
+		<li>Cusp catastrophe</li>
+		<li>Limit cycles</li>
+		<li>Nullclines</li>
+		<li>Clock + wavefront mechanisms</li>
+		<li>Morphogen gradients</li>
+		<li>Lateral inhibition (notch-delta)</li>
+		<li>Morphogen</li>
+		<li>Regulatory networks in cells (2 examples)</li>
+		<li>Protein production</li>
+		<li>Negatively autoregulated gene</li>
+		<li>Eukaryote (vs prokaryote)</li>
+		<li>Protein folding</li>
+		<li>Cell cycle time (typically ~30 min on good food source)</li>
+		<li>Rise time</li>
+		<li>DNA microarray chips - for measuring the type of mRNA present in a population of cells, by translating it to cDNA which is labeled with a fluorescent marker</li>
+		<li>Noise in systems with "small" numbers of molecules</li>
+		<li>Individual cells are not identical</li>
+		<li>Instrinsic vs extrinsic noise</li>
+		<li>Chemical master equation (from summing probabilities)</li>
+		<li>Visualising noise - anchor fluorescent protein to membrane to minimise diffusive motion - "for most of the time, no protein molecules are being produced"</li>
+		<li>Binding probability (and confusion of definition)</li>
+		<li>Activators/repressors</li>
+		<li>lac operon</li>
+		<li>Persistence length (*)</li>
+		<li>Lambda phage</li>
+		<li>Lysis, lysogeny</li>
+		<li>Bistable switch</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		
+  </ul>
+  </div>
+  
+  
+  
+  <br>
+  <button type="button" class="collapsible">AOP</button>
+  <div class="content">
+  <ul id="id14">
+  <button class="sort-button" onclick="sortList14()">Sort</button>
+    <li>Schr&oumldinger equation</li>
+    <li>Darwin term</li>
+    <li>Lamb shift</li>
+    <li>Zeeman effect (incl. normal and anomalous)</li>
+    <li>Stark effect (DC vs AC)</li>
+    <li>Bohr theory, radius</li>
+    <li>Rydberg atom, state, constant</li>
+    <li>Balmer lines</li>
+    <li>Lyman series</li>
+    <li>Paschen series</li>
+    <li>Einstein A and B coefficients</li>
+    <li>Doppler cooling</li>
+    <li>Optical Bloch equations</li>
+    <li>Sisyphus cooling</li>
+		<li>Fermi's Golden Rule</li>
+		<li>Bloch sphere</li>
+		<li>Bose-Einstein condensate</li>
+		<li>Stern-Gerlach experiment</li>
+		<li>Compton wavelength</li>
+		<li>Thomas precession</li>
+		<li>Pauli approximation</li>
+		<li>Hund's rules</li>
+		<li>Land&eacute formula</li>
+		<li>Clebsch-Gordan coefficients</li>
+		<li>Paschen-Back effect</li>
+		<li>Fermi contact interaction</li>
+		<li>Rabi oscillations</li>
+		<li>Beer-Lambert law</li>
+		<li>Landau-Zener result</li>
+		<li>Ramsey interferometry, fringes</li>
+		<li>Rabi (generalised) frequency</li>
+		<li>Russell-Saunders terms</li>
+		<li></li>
+		<li></li>
+  </ul>
+  Other important things: <button class="sort-button" onclick="sortList14o()">Sort</button>
+  <ul id="id14other">
+    <li>Isotope shift</li>
+    <li>LS coupling/ fine structure</li>
+    <li>Hyperfine structure</li>
+    <li>Selection rules</li>
+    <li>Exchange integral</li>
+    <li>Spectroscopic terms</li>
+    <li>Spherical harmonics</li>
+    <li>Gross energy levels</li>
+		<li>Alpha (fine structure constant) is small!</li>
+		<li>Vacuum fluctuations</li>
+		<li>Direct integral</li>
+		<li>Quantum defect</li>
+		<li>Central field approximation</li>
+		<li>Good quantum numbers</li>
+		<li>Interval rule</li>
+		<li>Normal mass shift</li>
+		<li>Volume shift</li>
+		<li>Density matrices</li>
+		<li>"Clever dressed states"</li>
+		<li>Stretched states</li>
+		<li>Optical cross section</li>
+		<li>Optical trapping with AC Stark</li>
+		<li>Two-photon transitions</li>
+		<li>Adiabatic theorem</li>
+		<li>Popoulations and coherences</li>
+		<li>Detuning</li>
+		<li>E1 selection rules:∆J = 0, ±1 (0 x→ 0), ∆mJ = 0, ±1, Parity change, ∆l = ±1, Any ∆n, ∆L = 0, ∆S = 0 </li>
+		<li>M1 selection rules: ∆J = 0, ±1 (0 x→ 0), ∆mJ = 0, ±1, No parity change, ∆l = 0, ∆n = 0, ∆L = 0, ∆S = 0</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+  </ul>
+  </div>
+   
+  
+  
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+
+function sortList() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id01");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+
+
+function sortList2() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id02");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortList2o() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id02other");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortList3() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id03");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+function sortList3o() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id03other");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+function sortList4() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id04");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortList4o() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id04other");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortList5() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id05");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortList5o() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id05other");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortList6() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id06");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortList6o() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id06other");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortList7() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id07");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortList7o() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id07other");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortList8() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id08");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortList8o() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id08other");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortList9() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id09");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortLis9o() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id09other");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortList10() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id10");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortList10o() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id10other");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortList11() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id11");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+</script>
+  
+</body>
+<html>
+  
