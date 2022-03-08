@@ -11,5 +11,7 @@ Method for doing this is as follows:
 - any changes to the site should be visible fairly quickly
 - note that pushing from the server to the github repo requires the PAT and my github username (jsm8989)
 
+The stuff in ignore is a temporary way for me to add stuff to a different section of the website without having to connect a different repo
+
 # contributions
 Kieran: I've added a helpful guide to Wales and Whales, just in case anyone is confused.
