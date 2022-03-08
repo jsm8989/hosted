@@ -1,5 +1,5 @@
 # hosted
-This (the *master* branch) is hosted on my website at jsm89.user.srcf.net/hub
+This (the *master-new* branch) is hosted on my website at jsm89.user.srcf.net/hub
 When I understand git better I will change this to the main branch, don't you worry :)
 
 Anyone can contribute to this page. 
